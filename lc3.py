@@ -18,7 +18,11 @@ class Solution:
 solution = Solution()
 
 nums1 = [1, 1, 2]
-print(solution.removeDuplicates(nums1))  # Output: 2, nums1 = [1, 2, ...]
+result1 = solution.removeDuplicates(nums1)  # Output: 2, nums1 = [1, 2, ...]
+print(result1)  # Print the number of unique elements
+print(nums1[:result1])  # Print the modified nums list with unique elements
 
 nums2 = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
-print(solution.removeDuplicates(nums2))  # Output: 5, nums2 = [0, 1, 2, 3, 4, ...]
+result2 = solution.removeDuplicates(nums2)  # Output: 5, nums2 = [0, 1, 2, 3, 4, ...]
+print(result2)  # Print the number of unique elements
+print(nums2[:result2])  # Print the modified nums list with unique elements
